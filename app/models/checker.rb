@@ -10,7 +10,7 @@ class Checker
       # puts "**** ALOHA ****"
       ! %W(4 5).include?(response.code[0]) # Not from 4xx or 5xx families
     end
-  rescue Errno::ENOENT
+  rescue
     false
   end
 end
