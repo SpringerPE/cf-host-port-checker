@@ -6,7 +6,7 @@ post '/' do
   host = params['host']
   port = params['port']
   check = Checker.new
-  if check.url_exists?(host, port)
+  if check.port_open?(host, port)
     flash[:true] = "Yes! I can reach #{host}:#{port}!"
   else
     flash[:false] = "Boohoo... I can't reach #{host}:#{port}."
