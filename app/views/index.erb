@@ -1,15 +1,41 @@
 <html>
 <head>
-  <title>URL Checker</title>
+  <title>Host:Port Checker</title>
+  <link rel="stylesheet" type="text/css" href="/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/css/application.css">
 </head>
 
 <body>
-  <h1>Type in the host and the port:</h1>
+  <h1>check this for me plz</h1>
   <form action="/" method="post">
-    <input type="text" name="host" placeholder="Host"><br>
-    <input type="text" name="port" placeholder="Port"><br>
+    <input type="text" name="host" placeholder="Host"><input type="text" name="port" placeholder="Port"><br>
     <input type="submit" class="button" value="Check link"><br>
   </form>
-  <%= flash[:notice] %>
+
+  <% if flash[:true] %>
+    <div class='flash true'>
+      <%= flash[:true] %>
+      <div id="_giphy_tv"></div>
+      <script>
+          var _giphy_tv_tag="happy";
+          var g = document.createElement('script'); g.type = 'text/javascript'; g.async = true;
+          g.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'giphy.com/static/js/widgets/tv.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(g, s);
+      </script>
+    </div>
+  <% end %>
+  <% if flash[:false] %>s
+    <div class='flash false'>
+      <%= flash[:false] %>
+      <div id="_giphy_tv"></div>
+      <script>
+          var _giphy_tv_tag="sad";
+          var g = document.createElement('script'); g.type = 'text/javascript'; g.async = true;
+          g.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'giphy.com/static/js/widgets/tv.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(g, s);
+      </script>
+    </div>
+  <% end %>
+
 </body>
 </html>

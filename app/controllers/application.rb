@@ -7,9 +7,9 @@ post '/' do
   port = params['port']
   check = Checker.new
   if check.url_exists?(host, port)
-    flash[:notice] = "Yes #{host}:#{port} does exist!"
+    flash[:true] = "Yes! I can reach #{host}:#{port}!"
   else
-    flash[:notice] = "Boohoo I can't find #{host}:#{port}!"
+    flash[:false] = "Boohoo... I can't reach #{host}:#{port}."
   end
   redirect to('/')
 end
