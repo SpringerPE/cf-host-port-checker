@@ -24,7 +24,7 @@ describe Checker do
 
   context 'URL existence checker' do
     it "can find google.com" do
-      check = @checker.url_exists?("http://www.google.com")
+      check = @checker.url_exists?("www.google.com")
       expect(check).to eq(true)
     end
 
