@@ -6,9 +6,10 @@
 </head>
 
 <body>
+  <header>Currently testing: <%= @live_or_dev %></header>
   <h1>I can haz tcp check plz</h1>
   <form action="/tcp" method="post">
-    <input type="text" name="host" placeholder="Host"><input type="text" name="port" placeholder="Port"><br>
+    <input type="text" name="host" placeholder="Host"><input type="text" name="port" value="80" placeholder="Port"><br>
     <input type="submit" class="button" value="Check tcp"><br>
   </form>
 
@@ -30,6 +31,7 @@
       </script>
     </div>
   <% end %>
+
   <% if flash[:false] %>
     <div class='flash false'>
       <%= flash[:false] %>
@@ -40,6 +42,12 @@
           g.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'giphy.com/static/js/widgets/tv.js';
           var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(g, s);
       </script>
+    </div>
+  <% end %>
+
+  <% if flash[:errors] %>
+    <div class='flash errors'>
+      <%= flash[:errors] %>
     </div>
   <% end %>
 

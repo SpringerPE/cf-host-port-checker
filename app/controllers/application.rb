@@ -1,4 +1,7 @@
 get '/' do
+  base_url = URI.parse(request.base_url)
+  url = base_url.host
+  @live_or_dev = !/(live|dev)/.match(url).nil? ? /(live|dev)/.match(url)[0] : url
   erb :index
 end
 
@@ -10,6 +13,7 @@ post '/tcp' do
     flash[:true] = "Yes! I can reach #{host}:#{port}!"
   else
     flash[:false] = "Boohoo... I can't reach #{host}:#{port}."
+    flash[:errors] = "This is what happened:<br>#{check.errors.map(&:capitalize).join("<br>")}"
   end
   redirect to('/')
 end
@@ -21,6 +25,7 @@ post '/url' do
     flash[:true] = "Yes! I can reach #{url}!"
   else
     flash[:false] = "Boohoo... I can't reach #{url}."
+    flash[:errors] = "This is what happened:<br>#{check.errors.map(&:capitalize).join("<br>")}"
   end
   redirect to('/')
 end

@@ -38,4 +38,12 @@ describe Checker do
       expect(check).to eq(false)
     end
   end
+
+  context "error log" do
+    it "knows about errors" do
+      check = @checker.url_exists?("http://www.thisdomaindoesntexist.com/not/even/here")
+      expect(@checker.errors).to_not be_empty
+    end
+  end
+
 end

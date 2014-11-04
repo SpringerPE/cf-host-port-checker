@@ -1,15 +1,22 @@
 class Checker
+  attr_accessor :errors
+
+  def initialize
+    @errors = []
+  end
 
   def port_open?(ip, port, seconds=1)
     Timeout::timeout(seconds) do
       begin
         TCPSocket.new(ip, port).close
         true
-      rescue Errno::ECONNREFUSED, Errno::EHOSTUNREACH
+      rescue Errno::ECONNREFUSED, Errno::EHOSTUNREACH => error_message
+        @errors << error_message.message
         false
       end
     end
-  rescue Timeout::Error, SocketError
+  rescue Timeout::Error, SocketError => error_message
+    @errors << error_message.message
     false
   end
 
@@ -25,7 +32,8 @@ class Checker
     else
       ! %W(4 5).include?(response.code[0]) # Not from 4xx or 5xx families
     end
-  rescue
+  rescue => error_message
+    @errors << error_message.message
     false #false if can't find the server
   end
 
