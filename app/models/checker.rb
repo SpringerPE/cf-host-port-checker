@@ -20,21 +20,28 @@ class Checker
     false
   end
 
-  def url_exists?(url_string)
-    url_string = url_validator(url_string)
-    url = URI.parse(url_string)
-    request = Net::HTTP.new(url.host, url.port)
-    request.use_ssl = (url.scheme == 'https')
-    path = !url.path.empty? ? url.path : '/'
-    response = request.request_head(path)
-    if response.kind_of?(Net::HTTPRedirection)
-      url_exists?(response['location']) # Go after any redirect and make sure you can access the redirected URL
-    else
-      ! %W(4 5).include?(response.code[0]) # Not from 4xx or 5xx families
+  def url_exists?(url_string, seconds=5)
+    Timeout::timeout(seconds) do
+      begin
+        url_string = url_validator(url_string)
+        url = URI.parse(url_string)
+        request = Net::HTTP.new(url.host, url.port)
+        request.use_ssl = (url.scheme == 'https')
+        path = !url.path.empty? ? url.path : '/'
+        response = request.request_head(path)
+        if response.kind_of?(Net::HTTPRedirection)
+          url_exists?(response['location']) # Go after any redirect and make sure you can access the redirected URL
+        else
+          ! %W(4 5).include?(response.code[0]) # Not from 4xx or 5xx families
+        end
+      rescue => error_message
+        @errors << error_message.message
+        false #false if can't find the server
+      end
     end
-  rescue => error_message
-    @errors << error_message.message
-    false #false if can't find the server
+    rescue Timeout::Error, SocketError => error_message
+      @errors << error_message.message
+      false
   end
 
   def url_validator(url_string)
