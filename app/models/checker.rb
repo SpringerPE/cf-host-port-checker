@@ -18,7 +18,7 @@ class Checker
     Timeout::timeout(seconds) do
       connect_to_url(url_string)
     end
-    rescue Timeout::Error, SocketError => error
+    rescue Timeout::Error => error
       log_error(error)
       false
   end
