@@ -5,35 +5,35 @@ end
 post '/tcp' do
   host = params['host']
   port = params['port']
-  redirect to("/tcp/#{host}/#{port}")
+  redirect to("/check?host=#{host}&port=#{port}")
 end
 
 post '/url' do
   url = params['url']
-  redirect to("/url/#{url}")
+  redirect to("/check?url=#{url}")
 end
 
-get '/tcp/:host/:port' do
-  host = params['host']
-  port = params['port']
+get '/check' do
+  url = params[:url]
+  host = params[:host]
+  port = params[:port]
   check = Checker.new
-  if check.port_open?(host, port)
-    flash[:true] = "Yes! I can reach #{host}:#{port}!"
+  if (!url.nil? && !url.empty?)
+    if check.url_exists?(url)
+      flash[:true] = "Yes! I can reach #{url}!"
+    else
+      flash[:false] = "Boohoo... I can't reach #{url}."
+      flash[:errors] = "This is what happened:<br>#{check.errors.map(&:capitalize).join("<br>")}"
+    end
+  elsif (!host.nil? && !host.empty?) && (!port.nil? && !port.empty?)
+    if check.port_open?(host, port)
+      flash[:true] = "Yes! I can reach #{host}:#{port}!"
+    else
+      flash[:false] = "Boohoo... I can't reach #{host}:#{port}."
+      flash[:errors] = "This is what happened:<br>#{check.errors.map(&:capitalize).join("<br>")}"
+    end
   else
-    flash[:false] = "Boohoo... I can't reach #{host}:#{port}."
-    flash[:errors] = "This is what happened:<br>#{check.errors.map(&:capitalize).join("<br>")}"
-  end
-  erb :index
-end
-
-get '/url/:url' do
-  url = params['url']
-  check = Checker.new
-  if check.url_exists?(url)
-    flash[:true] = "Yes! I can reach #{url}!"
-  else
-    flash[:false] = "Boohoo... I can't reach #{url}."
-    flash[:errors] = "This is what happened:<br>#{check.errors.map(&:capitalize).join("<br>")}"
+    flash[:errors] = "Stop trying to defeat the system. Put your queries right."
   end
   erb :index
 end

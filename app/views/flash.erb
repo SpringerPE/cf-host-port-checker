@@ -1,0 +1,31 @@
+<% if flash[:true] %>
+  <div class='flash true'>
+    <%= flash[:true] %>
+    <div id="_giphy_tv"></div>
+    <script>
+        var _giphy_tv_tag="happy";
+        var g = document.createElement('script'); g.type = 'text/javascript'; g.async = true;
+        g.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'giphy.com/static/js/widgets/tv.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(g, s);
+    </script>
+  </div>
+<% end %>
+
+<% if flash[:false] %>
+  <div class='flash false'>
+    <%= flash[:false] %>
+    <div id="_giphy_tv"></div>
+    <script>
+        var _giphy_tv_tag="sad";
+        var g = document.createElement('script'); g.type = 'text/javascript'; g.async = true;
+        g.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'giphy.com/static/js/widgets/tv.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(g, s);
+    </script>
+  </div>
+<% end %>
+
+<% if flash[:errors] %>
+  <div class='flash errors'>
+    <%= flash[:errors] %>
+  </div>
+<% end %>
