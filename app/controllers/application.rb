@@ -19,9 +19,9 @@ get '/tcp/:host/:port' do
   port = params['port']
   check = Checker.new
   if check.port_open?(host, port)
-    flash[:true] = "Yes! I can reach #{host}:#{port}!"
+    @true = "Yes! I can reach #{host}:#{port}!"
   else
-    flash[:false] = "Boohoo... I can't reach #{host}:#{port}."
+    @false = "Boohoo... I can't reach #{host}:#{port}."
     flash[:errors] = "This is what happened:<br>#{check.errors.map(&:capitalize).join("<br>")}"
   end
   erb :index
@@ -31,9 +31,9 @@ get '/url/:url' do
   url = params['url']
   check = Checker.new
   if check.url_exists?(url)
-    flash[:true] = "Yes! I can reach #{url}!"
+    @true = "Yes! I can reach #{url}!"
   else
-    flash[:false] = "Boohoo... I can't reach #{url}."
+    @false = "Boohoo... I can't reach #{url}."
     flash[:errors] = "This is what happened:<br>#{check.errors.map(&:capitalize).join("<br>")}"
   end
   erb :index
