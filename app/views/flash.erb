@@ -1,6 +1,6 @@
-<% if flash[:true] %>
+<% if @true %>
   <div class='flash true'>
-    <%= flash[:true] %>
+    <%= @true %>
     <div id="_giphy_tv"></div>
     <script>
         var _giphy_tv_tag="happy";
@@ -11,9 +11,9 @@
   </div>
 <% end %>
 
-<% if flash[:false] %>
+<% if @false %>
   <div class='flash false'>
-    <%= flash[:false] %>
+    <%= @false %>
     <div id="_giphy_tv"></div>
     <script>
         var _giphy_tv_tag="sad";
@@ -24,8 +24,8 @@
   </div>
 <% end %>
 
-<% if flash[:errors] %>
+<% if @errors %>
   <div class='flash errors'>
-    <%= flash[:errors] %>
+    <%= @errors %>
   </div>
 <% end %>
