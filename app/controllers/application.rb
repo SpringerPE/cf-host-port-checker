@@ -10,7 +10,7 @@ post '/tcp' do
 end
 
 post '/url' do
-  url = params['url']
+  url = params['url'].sub(/^https?\:\/\//, '')
   redirect to("/url/#{url}")
 end
 
@@ -22,19 +22,22 @@ get '/tcp/:host/:port' do
     @true = "Yes! I can reach #{host}:#{port}!"
   else
     @false = "Boohoo... I can't reach #{host}:#{port}."
-    flash[:errors] = "This is what happened:<br>#{check.errors.map(&:capitalize).join("<br>")}"
+    @errors = "This is what happened:<br>#{check.errors.map(&:capitalize).join("<br>")}"
   end
   erb :index
 end
 
-get '/url/:url' do
-  url = params['url']
+get '/url/*' do
+  protocol = params[:splat].first
+  address = params[:splat][1..-1].join('/')
+
+  url = protocol + address
   check = Checker.new
   if check.url_exists?(url)
     @true = "Yes! I can reach #{url}!"
   else
     @false = "Boohoo... I can't reach #{url}."
-    flash[:errors] = "This is what happened:<br>#{check.errors.map(&:capitalize).join("<br>")}"
+    @errors = "This is what happened:<br>#{check.errors.map(&:capitalize).join("<br>")}"
   end
   erb :index
 end
