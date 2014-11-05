@@ -8,6 +8,17 @@ end
 post '/tcp' do
   host = params['host']
   port = params['port']
+  redirect to("/tcp/#{host}/#{port}")
+end
+
+post '/url' do
+  url = params['url']
+  redirect to("/url/#{url}")
+end
+
+get '/tcp/:host/:port' do
+  host = params['host']
+  port = params['port']
   check = Checker.new
   if check.port_open?(host, port)
     flash[:true] = "Yes! I can reach #{host}:#{port}!"
@@ -18,7 +29,7 @@ post '/tcp' do
   redirect to('/')
 end
 
-post '/url' do
+get '/url/:url' do
   url = params['url']
   check = Checker.new
   if check.url_exists?(url)
