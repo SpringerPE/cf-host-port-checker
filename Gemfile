@@ -8,4 +8,6 @@ gem 'httparty'
 
 group :test, :development do
   gem 'rspec'
+  gem 'cucumber'
+  gem 'webrat'
 end
