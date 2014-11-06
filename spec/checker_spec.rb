@@ -23,6 +23,11 @@ describe Checker do
   end
 
   context 'URL existence checker' do
+    it "can find springer.com" do
+      check = @checker.url_exists?("www.springer.com")
+      expect(check).to eq(true)
+    end
+
     it "can find google.com" do
       check = @checker.url_exists?("www.google.com")
       expect(check).to eq(true)
@@ -31,6 +36,11 @@ describe Checker do
     it "can find example.com" do
       check = @checker.url_exists?("http://www.example.com")
       expect(check).to eq(true)
+    end
+
+    it "cannot find http://www.google.com/images/sometjwe (404)" do
+      check = @checker.url_exists?("http://www.google.com/images/sometjwe")
+      expect(check).to eq(false)
     end
 
     it "cannot find thisdomaindoesntexist.com" do

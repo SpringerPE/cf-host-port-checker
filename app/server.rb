@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'sinatra/partial'
+require 'httparty'
 
 set :partial_template_engine, :erb
 

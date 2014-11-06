@@ -45,18 +45,11 @@ class Checker
   def create_request(url_string)
     url_string = url_validator(url_string)
     url = URI.parse(url_string)
-    request = Net::HTTP.new(url.host, url.port)
-    request.use_ssl = (url.scheme == 'https')
-    path = !url.path.empty? ? url.path : '/'
-    request.request_head(path)
+    HTTParty.get(url)
   end
 
   def check_response(response)
-    if response.kind_of?(Net::HTTPRedirection)
-      url_exists?(response['location']) # Go after any redirect and make sure you can access the redirected URL
-    else
-      ! %W(4 5).include?(response.code[0]) # Not from 4xx or 5xx families
-    end
+    response.code.to_s.start_with?("2")
   end
 
   def connect_to_socket(ip,port)
