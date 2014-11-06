@@ -37,7 +37,7 @@ class Checker
       response = create_request(url_string)
       check_response(response)
     rescue => error
-      log_error(error)
+      log_error(error.message)
       false #false if can't find the server
     end
   end
@@ -49,7 +49,13 @@ class Checker
   end
 
   def check_response(response)
-    response.code.to_s.start_with?("2")
+    if response.code.to_s.start_with?("2")
+      true
+    else
+      error = response.code.to_s + ": " + response.message
+      log_error(error)
+      false
+    end
   end
 
   def connect_to_socket(ip,port)
@@ -57,13 +63,13 @@ class Checker
       TCPSocket.new(ip, port).close
       true
     rescue Errno::ECONNREFUSED, Errno::EHOSTUNREACH => error
-      log_error(error)
+      log_error(error.message)
       false
     end
   end
 
   def log_error(error)
-    @errors << error.message
+    @errors << error
   end
 
   def url_validator(url_string)

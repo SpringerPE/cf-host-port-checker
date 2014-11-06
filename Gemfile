@@ -8,5 +8,4 @@ gem 'httparty'
 
 group :test, :development do
   gem 'rspec'
-  # gem 'capybara'
 end
