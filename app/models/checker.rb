@@ -10,7 +10,7 @@ class Checker
       connect_to_socket(ip,port)
     end
     rescue Timeout::Error, SocketError => error
-      log_error(error)
+      log_error(error.message)
       false
   end
 
@@ -19,7 +19,7 @@ class Checker
       connect_to_url(url_string)
     end
     rescue Timeout::Error => error
-      log_error(error)
+      log_error(error.message)
       false
   end
 
@@ -53,7 +53,7 @@ class Checker
       true
     else
       error = response.code.to_s + ": " + response.message
-      log_error(error)
+      log_error(error.message)
       false
     end
   end
@@ -68,7 +68,7 @@ class Checker
     end
   end
 
-  def log_error(error)
+  def log_error(error.message)
     @errors << error
   end
 
