@@ -10,7 +10,7 @@ post '/tcp' do
 end
 
 post '/url' do
-  url = params['url'].sub(/^https?\:\/\//, '')
+  url = CGI.escape(params['url'])
   redirect to("/url/#{url}")
 end
 
@@ -28,10 +28,9 @@ get '/tcp/:host/:port' do
 end
 
 get '/url/*' do
-  protocol = params[:splat].first
-  address = params[:splat][1..-1].join('/')
+  address = params[:splat].first
 
-  url = protocol + address
+  url = address.sub( %r{^http(s)?:\/?}, 'http\1://' )
   check = Checker.new
   if check.url_exists?(url)
     @true = "Yes! I can reach #{url}!"
