@@ -68,7 +68,7 @@ class Checker
     end
   end
 
-  def log_error(error.message)
+  def log_error(error)
     @errors << error
   end
 
