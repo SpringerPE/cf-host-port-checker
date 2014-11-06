@@ -23,8 +23,8 @@ describe Checker do
   end
 
   context 'URL existence checker' do
-    it "can find springer.com" do
-      check = @checker.url_exists?("www.springer.com")
+    it "can find https://springer.com" do
+      check = @checker.url_exists?("https://www.springer.com")
       expect(check).to eq(true)
     end
 
