@@ -53,7 +53,7 @@ class Checker
       true
     else
       error = response.code.to_s + ": " + response.message
-      log_error(error.message)
+      log_error(error)
       false
     end
   end
