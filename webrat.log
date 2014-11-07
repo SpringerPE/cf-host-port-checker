@@ -153,3 +153,207 @@ D, [2014-11-07T13:59:26.977114 #23607] DEBUG -- : REQUESTING PAGE: GET / with {}
 D, [2014-11-07T13:59:26.980720 #23607] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.google.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
 D, [2014-11-07T13:59:26.985410 #23607] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
 D, [2014-11-07T13:59:26.987781 #23607] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:10:18.903871 #24227] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:10:18.918427 #24227] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:10:18.922978 #24227] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"google.com", "port"=>"80"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:10:19.002390 #24227] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:10:19.006626 #24227] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.google.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:10:19.011499 #24227] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:10:19.013654 #24227] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:13:16.810016 #24415] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:13:16.827402 #24415] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:13:16.831818 #24415] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"google.com", "port"=>"80"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:13:16.874459 #24415] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:13:16.877291 #24415] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.google.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:13:16.881025 #24415] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:13:16.882879 #24415] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:13:35.842331 #24453] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:13:35.857399 #24453] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:13:35.871671 #24453] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"google.com", "port"=>"80"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:13:35.949052 #24453] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:13:35.952421 #24453] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.google.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:13:35.958996 #24453] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:13:35.961151 #24453] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:14:23.183785 #24507] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:14:23.198369 #24507] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:14:23.214630 #24507] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"google.com", "port"=>"80"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:14:23.254758 #24507] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:14:23.257551 #24507] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.google.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:14:23.261353 #24507] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:14:23.264096 #24507] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.domaindoesnotexist.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:14:23.268362 #24507] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:14:23.270405 #24507] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:14:45.913710 #24539] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:14:45.928104 #24539] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:14:45.943036 #24539] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"google.com", "port"=>"80"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:14:45.987106 #24539] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:14:45.991034 #24539] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.google.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:14:45.996082 #24539] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:14:45.999391 #24539] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.domaindoesnotexist.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:14:46.005317 #24539] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:14:46.007380 #24539] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:15:47.273328 #24607] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:15:47.288566 #24607] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:15:47.294410 #24607] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"google.com", "port"=>"80"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:15:47.366242 #24607] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:15:47.369836 #24607] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.google.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:15:47.374734 #24607] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:15:47.378215 #24607] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.domaindoesnotexist.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:15:47.381988 #24607] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:15:47.383910 #24607] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:17:11.319077 #24688] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:17:11.333351 #24688] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:17:11.348379 #24688] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6667"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:17:11.354869 #24688] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:17:11.358005 #24688] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.google.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:17:11.362021 #24688] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:17:11.367532 #24688] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.domaindoesnotexist.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:17:11.372067 #24688] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:17:11.374204 #24688] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:17:21.161041 #24709] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:17:21.175787 #24709] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:17:21.190415 #24709] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6667"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:17:21.226953 #24709] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:17:21.230022 #24709] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.google.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:17:21.234240 #24709] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:17:21.237890 #24709] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.domaindoesnotexist.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:17:21.241826 #24709] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:17:21.243762 #24709] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:18:16.333552 #24768] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:18:16.347762 #24768] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:18:16.353368 #24768] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6667"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:18:16.359009 #24768] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:18:16.361794 #24768] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.google.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:18:16.365788 #24768] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:18:16.368560 #24768] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.domaindoesnotexist.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:18:16.372232 #24768] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:18:16.374238 #24768] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:18:48.707357 #24804] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:18:48.723217 #24804] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:18:48.739746 #24804] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6667"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:18:48.745123 #24804] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:18:48.748630 #24804] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6668"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:18:48.753791 #24804] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:18:48.756621 #24804] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.google.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:18:48.760507 #24804] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:18:48.763172 #24804] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.domaindoesnotexist.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:18:48.766862 #24804] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:18:48.768872 #24804] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:19:04.126758 #24827] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:19:04.141148 #24827] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:19:04.156920 #24827] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6667"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:19:04.163610 #24827] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:19:04.168082 #24827] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6668"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:19:04.182374 #24827] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:19:04.185357 #24827] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.google.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:19:04.189247 #24827] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:19:04.191946 #24827] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.domaindoesnotexist.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:19:04.195385 #24827] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:19:04.197326 #24827] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:19:21.744208 #24856] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:19:21.760340 #24856] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:19:21.776875 #24856] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6667"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:19:21.782253 #24856] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:19:21.785516 #24856] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6668"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:19:21.800610 #24856] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:19:21.803438 #24856] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.google.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:19:21.807312 #24856] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:19:21.809956 #24856] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.domaindoesnotexist.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:19:21.814612 #24856] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:19:21.816663 #24856] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:20:55.385383 #24946] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:20:55.402986 #24946] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:20:55.419487 #24946] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6667"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:20:55.424997 #24946] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:20:55.428377 #24946] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6668"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:20:55.431968 #24946] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:20:55.434759 #24946] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.google.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:20:55.438577 #24946] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:20:55.441176 #24946] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.domaindoesnotexist.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:20:55.444606 #24946] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:20:55.446606 #24946] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:21:00.596127 #24964] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:21:00.613787 #24964] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:21:00.619211 #24964] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6667"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:21:00.624459 #24964] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:21:00.627793 #24964] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6668"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:21:00.630996 #24964] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:21:00.634164 #24964] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.google.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:21:00.653970 #24964] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:21:00.657541 #24964] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.domaindoesnotexist.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:21:00.664262 #24964] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:21:00.666585 #24964] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:22:14.453348 #25045] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:22:14.468516 #25045] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:22:14.485442 #25045] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6667"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:22:14.490675 #25045] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:22:14.493917 #25045] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6668"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:22:14.497223 #25045] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:22:14.499986 #25045] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.google.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:22:14.514532 #25045] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:22:14.517615 #25045] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.domaindoesnotexist.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:22:14.521266 #25045] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:22:14.523200 #25045] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:22:19.262804 #25063] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:22:19.277772 #25063] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:22:19.283341 #25063] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6667"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:22:19.289226 #25063] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:22:19.292774 #25063] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6668"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:22:19.317878 #25063] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:22:19.321895 #25063] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.google.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:22:19.326032 #25063] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:22:19.328658 #25063] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.domaindoesnotexist.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:22:19.334962 #25063] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:22:19.337097 #25063] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:23:32.462153 #25136] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:23:32.476482 #25136] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:23:32.482534 #25136] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6667"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:23:32.489127 #25136] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:23:32.493406 #25136] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6668"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:23:32.497455 #25136] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:23:32.500613 #25136] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.google.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:23:32.504850 #25136] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:23:32.507992 #25136] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.domaindoesnotexist.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:23:32.513917 #25136] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:23:32.516065 #25136] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:24:35.886746 #25228] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:24:35.901800 #25228] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:24:35.907384 #25228] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6667"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:24:35.912588 #25228] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:24:35.915994 #25228] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6668"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:24:35.919250 #25228] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:24:35.922586 #25228] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.google.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:24:35.926747 #25228] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:24:35.929702 #25228] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.domaindoesnotexist.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:24:35.936102 #25228] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:24:35.938276 #25228] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:24:48.979313 #25252] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:24:48.994915 #25252] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:24:49.012254 #25252] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6667"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:24:49.016861 #25252] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:24:49.032565 #25252] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6668"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:24:49.035239 #25252] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:24:49.038564 #25252] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:24:49.042103 #25252] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:24:55.818828 #25271] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:24:55.834447 #25271] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:24:55.850497 #25271] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6667"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:24:55.855952 #25271] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:24:55.859294 #25271] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6668"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:24:55.862746 #25271] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:24:55.865764 #25271] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.google.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:24:55.869623 #25271] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:24:55.872181 #25271] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.domaindoesnotexist.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:24:55.875577 #25271] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:24:55.877589 #25271] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:26:05.938874 #25343] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:26:05.953316 #25343] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:26:05.968753 #25343] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6667"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:26:05.974008 #25343] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:26:05.977428 #25343] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"localhost", "port"=>"6668"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:26:05.995376 #25343] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:26:05.999305 #25343] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.google.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:26:06.005059 #25343] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:26:06.008370 #25343] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>"www.domaindoesnotexist.com"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T14:26:06.012367 #25343] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T14:26:06.014519 #25343] DEBUG -- : REQUESTING PAGE: POST /url with {"url"=>""} and HTTP headers {"HTTP_REFERER"=>"/"}

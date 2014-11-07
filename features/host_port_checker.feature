@@ -9,16 +9,29 @@ Feature: Host-Port Checking
 
   Scenario: Checking valid TCP connectivity
     Given I am viewing "/"
-    When I fill in "host" with "google.com"
-    And I fill in "port" with "80"
+    When I fill in "host" with "localhost"
+    And I fill in "port" with "6667"
     And I click "Check tcp"
     Then I should see "Yes! I can reach"
+
+  Scenario: Checking valid TCP connectivity
+    Given I am viewing "/"
+    When I fill in "host" with "localhost"
+    And I fill in "port" with "6668"
+    And I click "Check tcp"
+    Then I should see "Boohoo"
 
   Scenario: Checking valid URL connectivity
     Given I am viewing "/"
     When I fill in "url" with "www.google.com"
     And I click "Check url"
     Then I should see "Yes! I can reach"
+
+  Scenario: Checking an invalid URL connectivity
+    Given I am viewing "/"
+    When I fill in "url" with "www.domaindoesnotexist.com"
+    And I click "Check url"
+    Then I should see "Boohoo"
 
   Scenario: Checking no entries
     Given I am viewing "/"
