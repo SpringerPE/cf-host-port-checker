@@ -4,7 +4,8 @@ require 'rubygems'
 require 'rack/test'
 require 'rspec/expectations'
 require 'webrat'
-
+require 'webmock/cucumber'
+WebMock.disable_net_connect!(:allow_localhost => true)
 
 require File.expand_path '../../../app/server.rb', __FILE__
 

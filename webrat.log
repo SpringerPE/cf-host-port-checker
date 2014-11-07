@@ -69,3 +69,12 @@ D, [2014-11-06T17:19:35.784650 #9359] DEBUG -- : REQUESTING PAGE: POST /tcp with
 D, [2014-11-06T17:19:50.753552 #9386] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
 D, [2014-11-06T17:19:50.772377 #9386] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
 D, [2014-11-06T17:19:50.776089 #9386] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"google.com", "port"=>"80"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T12:45:50.482206 #19743] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T12:45:50.506681 #19743] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T12:45:50.536280 #19743] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"google.com", "port"=>"80"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T12:46:04.453674 #19767] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T12:46:04.473471 #19767] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T12:46:04.480003 #19767] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"google.com", "port"=>"80"} and HTTP headers {"HTTP_REFERER"=>"/"}
+D, [2014-11-07T12:47:35.598362 #19852] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T12:47:35.618995 #19852] DEBUG -- : REQUESTING PAGE: GET / with {} and HTTP headers {}
+D, [2014-11-07T12:47:35.625481 #19852] DEBUG -- : REQUESTING PAGE: POST /tcp with {"host"=>"google.com", "port"=>"80"} and HTTP headers {"HTTP_REFERER"=>"/"}
