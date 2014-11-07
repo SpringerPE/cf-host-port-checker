@@ -14,7 +14,6 @@ end
 
 When /^I click "Check tcp"$/ do
   server = TCPServer.new 6667
-  do_stubbing
   click_button "Check tcp"
   follow_redirect!
   server.close
