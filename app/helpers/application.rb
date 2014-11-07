@@ -5,10 +5,6 @@ helpers do
     !/(live|dev)/.match(url).nil? ? /(live|dev)/.match(url)[0] : url
   end
 
-  def nil_or_empty(variable)
-    variable.nil? || variable.empty?
-  end
-
   def connect_to_correct_checker(url=nil, host=nil, port=nil)
     checker = Checker.new
     if !nil_or_empty(url)
@@ -37,17 +33,8 @@ helpers do
     end
   end
 
-  def no_input_message
-    status 400
-    @errors = "Stop trying to defeat the system. Put your queries right."
-  end
-
-  def error_logs(checker)
-    "This is what happened:<br>#{checker.errors.map(&:capitalize).join("<br>")}"
-  end
-
-  def unreachable_message(endpoint)
-    "Boohoo... I can't reach #{url}."
+  def reachable(endpoint)
+    @true = "Yes! I can reach #{endpoint}!"
   end
 
   def unreachable(endpoint, checker)
@@ -56,8 +43,20 @@ helpers do
     @errors = error_logs(checker)
   end
 
-  def reachable(endpoint)
-    @true = "Yes! I can reach #{endpoint}!"
+  def no_input_message
+    status 400
+    @errors = "Stop trying to defeat the system. Put your queries right."
   end
 
+  def unreachable_message(endpoint)
+    "Boohoo... I can't reach #{url}."
+  end
+
+  def error_logs(checker)
+    "This is what happened:<br>#{checker.errors.map(&:capitalize).join("<br>")}"
+  end
+
+  def nil_or_empty(variable)
+    variable.nil? || variable.empty?
+  end
 end
