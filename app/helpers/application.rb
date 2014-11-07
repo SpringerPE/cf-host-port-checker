@@ -49,7 +49,7 @@ helpers do
   end
 
   def unreachable_message(endpoint)
-    "Boohoo... I can't reach #{url}."
+    "Boohoo... I can't reach #{endpoint}."
   end
 
   def error_logs(checker)

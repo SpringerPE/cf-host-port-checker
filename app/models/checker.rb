@@ -23,15 +23,6 @@ class Checker
       false
   end
 
-  def flash_messages(url)
-    if url_exists?(url)
-      flash[:true] = "Yes! I can reach #{url}!"
-    else
-      flash[:false] = "Boohoo... I can't reach #{url}."
-      flash[:errors] = "This is what happened:<br>#{check.errors.map(&:capitalize).join("<br>")}"
-    end
-  end
-
   def connect_to_url(url_string)
     begin
       response = create_request(url_string)
