@@ -17,26 +17,7 @@ get '/check' do
   url = params[:url]
   host = params[:host]
   port = params[:port]
-  check = Checker.new
-  if !nil_or_empty(url)
-    if check.url_exists?(url)
-      @true = "Yes! I can reach #{url}!"
-    else
-      status 412
-      @false = "Boohoo... I can't reach #{url}."
-      @errors = "This is what happened:<br>#{check.errors.map(&:capitalize).join("<br>")}"
-    end
-  elsif !nil_or_empty(host) && !nil_or_empty(port)
-    if check.port_open?(host, port)
-      @true = "Yes! I can reach #{host}:#{port}!"
-    else
-      status 412
-      @false = "Boohoo... I can't reach #{host}:#{port}."
-      @errors = "This is what happened:<br>#{check.errors.map(&:capitalize).join("<br>")}"
-    end
-  else
-    status 400
-    @errors = "Stop trying to defeat the system. Put your queries right."
-  end
+  connect_to_correct_checker(url, host, port)
   erb :index
 end
+

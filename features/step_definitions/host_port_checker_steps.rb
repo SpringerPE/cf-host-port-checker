@@ -7,6 +7,9 @@ When /^I fill in "([^"]*)" with "([^"]*)"$/ do |element, text|
 end
 
 When /^I click "([^"]*)"$/ do |element|
+  stub_request(:get, "http://www.google.com/").
+    with(:headers => {'Accept'=>'*/*', 'Accept-Encoding'=>'gzip;q=1.0,deflate;q=0.6,identity;q=0.3', 'User-Agent'=>'Ruby'}).
+    to_return(:status => 200, :body => "", :headers => {})
   click_button element
   follow_redirect!
 end
@@ -14,7 +17,6 @@ end
 Then /^I should see "(.+)"$/ do |text|
   expect(response_body).to match Regexp.new(Regexp.escape(text))
 end
-
 
 Then(/^I should be on "(.*?)"$/) do |url|
   expect(path).to eq(url)

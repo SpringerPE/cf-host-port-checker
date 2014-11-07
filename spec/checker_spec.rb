@@ -7,21 +7,20 @@ describe Checker do
   end
 
   context 'TCP connection checker' do
-    it "can find google.com" do
-      Checker.stub(:coonect_to_socket).and_return(true)
-      check = @checker.port_open?("www.google.com", 80)
+    it "can find open TCP server" do
+      server = TCPServer.new 6667
+      check = @checker.port_open?("localhost", 6667)
       expect(check).to eq(true)
+      server.close
     end
 
-    it "cannot find thisdomaindoesntexist.com" do
-      Checker.stub(:coonect_to_socket).and_return(false)
-      check = @checker.port_open?("www.thisdomaindoesntexist.com", 80)
+    it "cannot find invalid TCP server" do
+      check = @checker.port_open?("localhost", 80)
       expect(check).to eq(false)
     end
   end
 
   context 'URL existence checker' do
-
     it "can find google.com" do
       check = @checker.url_exists?("www.google.com")
       expect(check).to eq(true)
