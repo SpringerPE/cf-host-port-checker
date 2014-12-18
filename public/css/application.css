@@ -34,7 +34,6 @@ form {
 }
 
 form input[type="text"] {
-  text-transform: uppercase;
   border: 1px solid black;
   font-size: 40px;
   width: 40%;
