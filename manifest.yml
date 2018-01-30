@@ -2,4 +2,5 @@
 applications:
 - name: host-port-checker
   instances: 1
-  memory: 512M
+  memory: 64M
+  instances: 2
