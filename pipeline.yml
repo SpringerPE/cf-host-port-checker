@@ -1,0 +1,61 @@
+# Generated using halfpipe cli version 1.62.1
+groups: []
+resources:
+- name: git
+  type: git
+  source:
+    branch: master
+    private_key: ((github.private_key))
+    uri: git@github.com:SpringerPE/cf-host-port-checker.git
+- name: timer 24h
+  type: time
+  source:
+    interval: 24h
+- name: CF snpaas live
+  type: cf-resource
+  source:
+    api: ((cloudfoundry.api-snpaas))
+    org: ((cloudfoundry.org-snpaas))
+    password: ((cloudfoundry.password-snpaas))
+    prometheusGatewayURL: prometheus-pushgateway:9091
+    space: live
+    username: ((cloudfoundry.username-snpaas))
+resource_types:
+- name: cf-resource
+  type: docker-image
+  source:
+    repository: platformengineering/cf-resource
+    tag: stable
+jobs:
+- name: deploy-cf
+  serial: true
+  plan:
+  - aggregate:
+    - get: git
+      trigger: true
+    - get: timer 24h
+      trigger: true
+  - put: cf halfpipe-push
+    resource: CF snpaas live
+    params:
+      appPath: git
+      command: halfpipe-push
+      gitRefPath: git/.git/ref
+      manifestPath: git/manifest-snpaas.yml
+      testDomain: springernature.app
+    attempts: 2
+  - put: cf halfpipe-promote
+    resource: CF snpaas live
+    params:
+      command: halfpipe-promote
+      manifestPath: git/manifest-snpaas.yml
+      testDomain: springernature.app
+    attempts: 2
+  ensure:
+    put: cf halfpipe-cleanup
+    resource: CF snpaas live
+    params:
+      command: halfpipe-cleanup
+      manifestPath: git/manifest-snpaas.yml
+    attempts: 2
+
