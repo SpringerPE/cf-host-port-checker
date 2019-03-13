@@ -1,6 +1,7 @@
 ---
 applications:
 - name: host-port-checker
-  instances: 1
   memory: 64M
   instances: 2
+  buildpacks:
+  - https://github.com/cloudfoundry/ruby-buildpack.git#v1.7.25
