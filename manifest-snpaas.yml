@@ -2,6 +2,7 @@
 applications:
 - name: host-port-checker
   memory: 64M
+  stack: cflinuxfs3
   instances: 2
   routes:
   - route: host-port-checker.springernature.app
