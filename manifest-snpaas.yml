@@ -7,4 +7,4 @@ applications:
   routes:
   - route: host-port-checker.springernature.app
   buildpacks:
-  - https://github.com/cloudfoundry/ruby-buildpack.git#v1.7.25
+  - https://github.com/cloudfoundry/ruby-buildpack.git#v1.7.26
