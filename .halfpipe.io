@@ -1,6 +1,9 @@
 team: engineering-enablement
 pipeline: host-port-checker
-trigger_interval: 24h
+
+triggers:
+- type: timer
+  cron: "0 1 * * *"
 
 tasks:
 - type: deploy-cf
