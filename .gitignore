@@ -1,2 +1,4 @@
 webrat.log
 .ruby-version
+/.idea/
+/pipeline.yml
