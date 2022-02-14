@@ -9,7 +9,7 @@ services:
         servicePort: 3000
         protocol: http
     snprobe:
-      healthcheckProbe:
+      livenessProbe:
         httpGet:
           path: /
           port: 3000
