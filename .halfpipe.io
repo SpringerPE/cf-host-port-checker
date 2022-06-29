@@ -26,7 +26,7 @@ tasks:
               image: eu.gcr.io/halfpipe-io/ee-katee-vela-cli:latest
             vars:
               KATEE_TEAM: engineering-enablement
-              KATEE_GKE_CREDENTIALS: ((katee-service-account-dev.key))
+              KATEE_GKE_CREDENTIALS: ((katee-engineering-enablement-service-account-dev.key))
               KATEE_APPFILE: ci/vela-dev.yaml
               KATEE_GKE_PROJECT: dev
           - type: run
@@ -36,7 +36,7 @@ tasks:
               image: eu.gcr.io/halfpipe-io/ee-katee-vela-cli:latest
             vars:
               KATEE_TEAM: engineering-enablement
-              KATEE_GKE_CREDENTIALS: ((katee-service-account.key))
+              KATEE_GKE_CREDENTIALS: ((katee-engineering-enablement-service-account-prod.key))
               KATEE_APPFILE: ci/vela-prod.yaml
               KATEE_GKE_PROJECT: prod
 
