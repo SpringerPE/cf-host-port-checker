@@ -17,7 +17,7 @@ spec:
     - type: sningress
       properties:
         privateRoutes:
-        - route: host-port-checker.apps.private.k8s-dev.springernature.io
+        - route: host-port-checker.apps.private.k8s.springernature.io
           cname: katee-host-port-checker.ee.springernature.io
           servicePort: 3000
     - type: snprobe
