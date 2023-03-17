@@ -18,6 +18,7 @@ spec:
       properties:
         privateRoutes:
         - route: host-port-checker.apps.private.k8s-dev.springernature.io
+          cname: katee-host-port-checker.ee.springernature.io
           servicePort: 3000
     - type: snprobe
       properties:
